@@ -10,4 +10,9 @@ almost everthing(still testing)
 not working:
 nothing till now.
 
+how to use?
+normal hackintosh installation steps(to be added).
+1. add -amd_no_dgpu_accel in boot-args, otherwise you will see blackscreen after booted into Ventura. 
+2. run OpenCore Patcher , click 'Post-Install Root Patch', click 'Start root patching' .
+3. remove -amd_no_dgpu_accel in boot-args. then reboot, enjoy Ventura with your Optiplex 7010.
 
