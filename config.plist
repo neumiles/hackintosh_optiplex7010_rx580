@@ -42,7 +42,7 @@
 				<key>Comment</key>
 				<string>SSDT-XOSI.aml</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>SSDT-XOSI.aml</string>
 			</dict>
@@ -211,6 +211,23 @@
 	<dict>
 		<key>Add</key>
 		<dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>@0,name</key>
+				<string>ATY,Orinoco</string>
+				<key>@1,name</key>
+				<string>ATY,Orinoco</string>
+				<key>@2,name</key>
+				<string>ATY,Orinoco</string>
+				<key>@3,name</key>
+				<string>ATY,Orinoco</string>
+				<key>@4,name</key>
+				<string>ATY,Orinoco</string>
+				<key>AAPL,slot-name</key>
+				<string>Slot-1</string>
+				<key>connectors</key>
+				<data>AAQAAAQDAAAAAQEBAAAAABIEBgEAAAAAAAQAAAQDAAAAAQIBAAAAACIFBAMAAAAAAAgAAAQCAAAAAQMBAAAAABECAQIAAAAAAAgAAAQCAAAAAQQBAAAAACEDBQQAAAAABAAAAAQCAAAAAQUBAAAAABAAAwYAAAAA</data>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1B,0x0)</key>
 			<dict>
 				<key>layout-id</key>
@@ -239,6 +256,24 @@
 				<string></string>
 				<key>MinKernel</key>
 				<string>8.0.0</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>CPUFriend.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<false/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/CPUFriend</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
@@ -340,7 +375,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -412,7 +447,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -520,7 +555,7 @@
 				<key>Comment</key>
 				<string>SMCProcessor.kext</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/SMCProcessor</string>
 				<key>MaxKernel</key>
@@ -902,7 +937,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v keepsyms=1 debug=0x100 swd_panic=1 shikigva=128</string>
+				<string>-v keepsyms=1 debug=0x100 swd_panic=1 shikigva=128 ipc_control_port_options=0</string>
 				<key>csr-active-config</key>
 				<data>AwgAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -974,7 +1009,7 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string></string>
+			<string>F5K9435004NFHDDUE</string>
 			<key>ProcessorType</key>
 			<integer>3842</integer>
 			<key>ROM</key>
@@ -986,9 +1021,9 @@
 			<key>SystemProductName</key>
 			<string>MacPro7,1</string>
 			<key>SystemSerialNumber</key>
-			<string></string>
+			<string>F5KZL2YFP7QM</string>
 			<key>SystemUUID</key>
-			<string></string>
+			<string>4C52D161-288C-40E1-805F-3E8A8BFC960D</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
